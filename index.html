@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Prime | Home & Projects</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0b0f19',
+                        cardBg: '#111827',
+                        goldAccent: '#d97706',
+                        creamText: '#f3f4f6'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-darkBg text-creamText font-sans antialiased selection:bg-goldAccent selection:text-white">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-goldAccent text-darkBg text-xs font-bold text-center py-2 px-4 uppercase tracking-wider">
+        Now Booking Spring/Summer Projects — Free Consultations Available
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-darkBg/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <span class="text-xl font-bold tracking-tight text-white cursor-pointer" onclick="switchPage('home')">APEX<span class="text-goldAccent">PRIME</span></span>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <button onclick="switchPage('home')" id="nav-home" class="text-goldAccent transition">Home</button>
+                <button onclick="switchPage('projects')" id="nav-projects" class="hover:text-goldAccent transition">Projects & Work</button>
+                <a href="#contact" onclick="switchPage('home')" class="px-4 py-2 bg-goldAccent text-darkBg font-bold rounded-lg hover:bg-amber-500 transition">Get a Free Quote</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= PAGE 1: HOME ================= -->
+    <div id="page-home" class="page-content">
+        <!-- Hero Section -->
+        <section class="py-24 px-6 md:py-32">
+            <div class="max-w-4xl mx-auto text-center">
+                <span class="inline-block px-3 py-1 mb-6 text-xs font-semibold tracking-wider text-goldAccent uppercase bg-goldAccent/10 border border-goldAccent/20 rounded-full">
+                    Licensed Master Contractors
+                </span>
+                <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
+                    Exceptional Craftsmanship for Exceptional Homes.
+                </h1>
+                <p class="text-lg text-slate-400 max-w-2xl mx-auto mb-10">
+                    From luxury kitchen remodels to custom structural builds, we bring your architectural vision to life with uncompromising precision and speed.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 bg-goldAccent text-darkBg font-bold rounded-xl hover:bg-amber-500 transition shadow-lg shadow-goldAccent/20">
+                        Request an Estimate
+                    </a>
+                    <button onclick="switchPage('projects')" class="w-full sm:w-auto px-8 py-4 bg-cardBg text-slate-300 font-medium rounded-xl border border-slate-800 hover:text-white transition">
+                        View Our Projects Page →
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section class="py-24 px-6 border-t border-slate-800 bg-cardBg/40">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-bold text-white mb-4 text-center">Core Services</h2>
+                <p class="text-slate-400 mb-16 text-center max-w-md mx-auto">Tailored building and renovation solutions designed to enhance property value.</p>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-cardBg p-8 rounded-2xl border border-slate-800">
+                        <div class="text-goldAccent text-2xl mb-4 font-mono">01</div>
+                        <h3 class="text-xl font-semibold text-white mb-3">Kitchen & Bath Remodeling</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Complete structural overhauls, custom cabinetry installation, and modern fixture integration.</p>
+                    </div>
+                    <div class="bg-cardBg p-8 rounded-2xl border border-slate-800">
+                        <div class="text-goldAccent text-2xl mb-4 font-mono">02</div>
+                        <h3 class="text-xl font-semibold text-white mb-3">Structural Additions</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Seamless room expansions, framing, and architectural modifications built to exact code.</p>
+                    </div>
+                    <div class="bg-cardBg p-8 rounded-2xl border border-slate-800">
+                        <div class="text-goldAccent text-2xl mb-4 font-mono">03</div>
+                        <h3 class="text-xl font-semibold text-white mb-3">Custom Interior Finishes</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Hardwood flooring, custom millwork, premium painting, and precision trim carpentry.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof Stats -->
+        <section class="py-20 px-6 border-t border-slate-800">
+            <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-3xl sm:text-4xl font-extrabold text-white mb-1">15+</div>
+                    <div class="text-xs uppercase tracking-wider text-slate-400 font-mono">Years Experience</div>
+                </div>
+                <div>
+                    <div class="text-3xl sm:text-4xl font-extrabold text-white mb-1">450+</div>
+                    <div class="text-xs uppercase tracking-wider text-slate-400 font-mono">Projects Completed</div>
+                </div>
+                <div>
+                    <div class="text-3xl sm:text-4xl font-extrabold text-white mb-1">100%</div>
+                    <div class="text-xs uppercase tracking-wider text-slate-400 font-mono">Satisfaction Rate</div>
+                </div>
+                <div>
+                    <div class="text-3xl sm:text-4xl font-extrabold text-white mb-1">10 Yr</div>
+                    <div class="text-xs uppercase tracking-wider text-slate-400 font-mono">Workmanship Warranty</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Form Section -->
+        <section id="contact" class="py-24 px-6 border-t border-slate-800 bg-cardBg/40">
+            <div class="max-w-3xl mx-auto bg-cardBg border border-slate-800 p-8 sm:p-12 rounded-3xl shadow-2xl">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-bold text-white mb-2">Start Your Project</h2>
+                    <p class="text-slate-400 text-sm">Fill out the form below and our team will get back to you within 24 hours.</p>
+                </div>
+                <form class="space-y-6" onsubmit="event.preventDefault(); alert('Demo form submitted successfully!');">
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs uppercase font-mono tracking-wider text-slate-400 mb-2">Your Name</label>
+                            <input type="text" required class="w-full bg-darkBg border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-goldAccent transition" placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase font-mono tracking-wider text-slate-400 mb-2">Phone Number</label>
+                            <input type="tel" required class="w-full bg-darkBg border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-goldAccent transition" placeholder="+1 (555) 000-0000">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase font-mono tracking-wider text-slate-400 mb-2">Project Type</label>
+                        <select class="w-full bg-darkBg border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-goldAccent transition">
+                            <option>Kitchen Remodel</option>
+                            <option>Bathroom Renovation</option>
+                            <option>Structural Addition</option>
+                            <option>Custom Carpentry / Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase font-mono tracking-wider text-slate-400 mb-2">Project Details</label>
+                        <textarea rows="4" class="w-full bg-darkBg border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-goldAccent transition" placeholder="Tell us about your timeline and vision..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-4 bg-goldAccent text-darkBg font-bold rounded-xl hover:bg-amber-500 transition shadow-lg shadow-goldAccent/20">
+                        Submit Request
+                    </button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <!-- ================= PAGE 2: PROJECTS & GALLERY ================= -->
+    <div id="page-projects" class="page-content hidden">
+        <section class="py-24 px-6">
+            <div class="max-w-6xl mx-auto">
+                <span class="text-xs font-mono uppercase tracking-widest text-goldAccent block mb-3">Portfolio & Case Studies</span>
+                <h2 class="text-4xl font-bold text-white mb-4">Our Recent Work</h2>
+                <p class="text-slate-400 mb-16 max-w-xl">Explore our latest residential overhauls, custom kitchen builds, and architectural expansions.</p>
+                
+                <div class="grid md:grid-cols-2 gap-10">
+                    <!-- Project Item 1 -->
+                    <div class="bg-cardBg border border-slate-800 rounded-2xl overflow-hidden">
+                        <div class="h-64 overflow-hidden">
+    <img src="images/kitchen-project.png" alt="Modern Kitchen Remodel" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+</div>
+                        <div class="p-8">
+                            <span class="text-xs font-mono text-goldAccent uppercase tracking-wider">Kitchen Remodel</span>
+                            <h3 class="text-2xl font-bold text-white mt-2 mb-3">The Oakridge Modern Estate</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                                Complete gut renovation featuring custom walnut cabinetry, waterfall quartz countertops, and integrated smart lighting systems.
+                            </p>
+                            <div class="flex items-center justify-between text-xs font-mono text-slate-400 border-t border-slate-800 pt-4">
+                                <span>Duration: 6 Weeks</span>
+                                <span class="text-white">Completed: 2026</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Item 2 -->
+                    <div class="bg-cardBg border border-slate-800 rounded-2xl overflow-hidden">
+                       <div class="h-64 overflow-hidden">
+    <img src="images/suite-project.png" alt="Master Suite Expansion" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+</div>
+                        <div class="p-8">
+                            <span class="text-xs font-mono text-goldAccent uppercase tracking-wider">Structural Addition</span>
+                            <h3 class="text-2xl font-bold text-white mt-2 mb-3">Pinecrest Master Suite Expansion</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-6>
+                                Built a custom second-story wing adding a luxury master bedroom, walk-in custom closet, and an open spa bathroom.
+                            </p>
+                            <div class="flex items-center justify-between text-xs font-mono text-slate-400 border-t border-slate-800 pt-4">
+                                <span>Duration: 10 Weeks</span>
+                                <span class="text-white">Completed: 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Client Testimonial Banner -->
+                <div class="mt-20 bg-cardBg border border-slate-800 p-10 rounded-3xl text-center max-w-4xl mx-auto">
+                    <p class="text-lg italic text-slate-300 mb-6">
+                        "Apex Prime transformed our outdated home into an absolute masterpiece. Their attention to detail, timeline management, and cleanliness throughout the build blew us away."
+                    </p>
+                    <div class="font-bold text-white">Dr. & Mrs. Aliyu</div>
+                    <div class="text-xs text-goldAccent font-mono mt-1">Verified Homeowners</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 border-t border-slate-900 text-center text-xs text-slate-500 font-mono">
+        <p>&copy; 2026 Apex Prime Construction. Concept Web Design by Naphtali.</p>
+    </footer>
+
+    <!-- JavaScript for Page Switching -->
+    <script>
+        function switchPage(pageId) {
+            // Hide all pages
+            document.getElementById('page-home').classList.add('hidden');
+            document.getElementById('page-projects').classList.add('hidden');
+
+            // Reset nav colors
+            document.getElementById('nav-home').classList.remove('text-goldAccent');
+            document.getElementById('nav-projects').classList.remove('text-goldAccent');
+            document.getElementById('nav-home').classList.add('hover:text-goldAccent');
+            document.getElementById('nav-projects').classList.add('hover:text-goldAccent');
+
+            // Show target page and highlight nav
+            if (pageId === 'home') {
+                document.getElementById('page-home').classList.remove('hidden');
+                document.getElementById('nav-home').classList.add('text-goldAccent');
+            } else if (pageId === 'projects') {
+                document.getElementById('page-projects').classList.remove('hidden');
+                document.getElementById('nav-projects').classList.add('text-goldAccent');
+            }
+
+            // Scroll back to top smoothly
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
